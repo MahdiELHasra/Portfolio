@@ -63,7 +63,7 @@ export default function SkillTab(props: SkillTabProps) {
         </div>
       ) : null}
       {topic === "collaborative" ? (
-        <div className="skill-tab-list">
+        <div className="skill-tab-list ">
           <Image source="git" name="Git" />
           <Image source="github" name="GitHub" />
         </div>

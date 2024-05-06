@@ -42,8 +42,11 @@ export default function Skills() {
         </div>
         <div className="skill-grid-third-row">
           {/* <SkillTab topic="collaborative" /> */}
-          <SkillTab topic="DB" />
           <SkillTab topic="Other" />
+          <SkillTab topic="DB" />
+        </div>
+        <div className="skill-grid-third-row">
+          {/* <SkillTab topic="Other" /> */}
         </div>
       </div>
     </div>
