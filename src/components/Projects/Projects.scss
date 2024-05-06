@@ -145,9 +145,9 @@ a {
   }
 }
 
-.ecom {
+.space {
   ::after {
-    content: "React E-Commerce Store";
+    content: "Space Tourism";
     width: 210px;
   }
 }
@@ -172,8 +172,8 @@ a {
   }
 }
 
-.ecom,
-.car {
+.car,
+.jotion {
   ::after {
     top: -30px;
   }
@@ -185,8 +185,8 @@ a {
   }
 }
 
-.jotion,
-.apple {
+.apple,
+.space {
   ::after {
     bottom: -30px;
   }

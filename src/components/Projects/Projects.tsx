@@ -39,22 +39,6 @@ export default function Projects() {
 
       <div className="project-list">
         <a
-          href="https://gianlucajahn.github.io/react-ecommerce-store/"
-          className="ecom"
-          target="_blank"
-          onMouseDown={playAudio}
-          onMouseUp={playAudio}
-        >
-          <div className="tooltip upper ecom" />
-          <motion.img
-            whileHover={{ scale: 1.025 }}
-            transition={{ type: "tween", duration: 0.15 }}
-            className="project-preview"
-            src={"../../assets/images/preview11.PNG"}
-          />
-        </a>
-
-        <a
           href="https://car-rental-x.vercel.app"
           className="car"
           target="_blank"
@@ -72,7 +56,7 @@ export default function Projects() {
 
         <a
           href="jotion-x.vercel.app"
-          className="jotion lower"
+          className="jotion upper"
           target="_blank"
           onMouseDown={playAudio}
           onMouseUp={playAudio}
@@ -99,6 +83,21 @@ export default function Projects() {
             transition={{ type: "tween", duration: 0.15 }}
             className="project-preview"
             src="../../assets/images/iPhone 15 Preview.png"
+          />
+        </a>
+        <a
+          href="https://space-tourism-z.vercel.app/"
+          className="space"
+          target="_blank"
+          onMouseDown={playAudio}
+          onMouseUp={playAudio}
+        >
+          <div className="tooltip lower space" />
+          <motion.img
+            whileHover={{ scale: 1.025 }}
+            transition={{ type: "tween", duration: 0.15 }}
+            className="project-preview"
+            src={"../../assets/images/Space Preview.png"}
           />
         </a>
       </div>

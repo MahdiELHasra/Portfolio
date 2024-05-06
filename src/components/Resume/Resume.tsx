@@ -41,7 +41,7 @@ export default function Resume() {
       >
         {state.language === "english"
           ? "Interesse an einem Gespräch?"
-          : "Interested in working with me?"}
+          : "Interested in a conversation?"}
       </motion.h1>
 
       <div className="resume-box">
