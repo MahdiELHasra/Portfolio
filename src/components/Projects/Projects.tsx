@@ -50,55 +50,55 @@ export default function Projects() {
             whileHover={{ scale: 1.025 }}
             transition={{ type: "tween", duration: 0.15 }}
             className="project-preview"
-            src={"../../assets/images/preview1.PNG"}
+            src={"../../assets/images/preview11.PNG"}
           />
         </a>
 
         <a
-          href="https://gianlucajahn.github.io/CV-Application/"
-          className="cv"
+          href="https://car-rental-x.vercel.app"
+          className="car"
           target="_blank"
           onMouseDown={playAudio}
           onMouseUp={playAudio}
         >
-          <div className="tooltip upper cv" />
+          <div className="tooltip upper car" />
           <motion.img
             whileHover={{ scale: 1.025 }}
             transition={{ type: "tween", duration: 0.15 }}
             className="project-preview"
-            src="../../assets/images/preview4.PNG"
+            src="../../assets/images/Car.png"
           />
         </a>
 
         <a
-          href="https://gianlucajahn.github.io/typescript-reddit-clone/"
-          className="reddit lower"
+          href="jotion-x.vercel.app"
+          className="jotion lower"
           target="_blank"
           onMouseDown={playAudio}
           onMouseUp={playAudio}
         >
-          <div className="tooltip lower reddit" />
+          <div className="tooltip lower jotion" />
           <motion.img
             whileHover={{ scale: 1.025 }}
             transition={{ type: "tween", duration: 0.15 }}
             className="project-preview"
-            src={"../../assets/images/preview3.PNG"}
+            src={"../../assets/images/Jotion Preview.png"}
           />
         </a>
 
         <a
-          href="https://gianlucajahn.github.io/macOS-react/"
-          className="mac lower"
+          href="https://iphone-15-one.vercel.app"
+          className="apple lower"
           target="_blank"
           onMouseDown={playAudio}
           onMouseUp={playAudio}
         >
-          <div className="tooltip lower mac" />
+          <div className="tooltip lower apple" />
           <motion.img
             whileHover={{ scale: 1.025 }}
             transition={{ type: "tween", duration: 0.15 }}
             className="project-preview"
-            src="../../assets/images/preview2.PNG"
+            src="../../assets/images/iPhone 15 Preview.png"
           />
         </a>
       </div>
