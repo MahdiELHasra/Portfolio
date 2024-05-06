@@ -31,12 +31,12 @@ export default function Showcase() {
 
       <div className="showcase-right">
         <img className="screen" src="../../assets/images/screen5.png" />
-        <iframe
+        {/* <iframe
           className="video"
           src="https://streamable.com/e/1ehwwr?autoplay=1&nocontrols=1"
           style={{ border: "none", borderRadius: "2px" }}
           allow="autoplay"
-        ></iframe>
+        ></iframe> */}
       </div>
     </div>
   );
