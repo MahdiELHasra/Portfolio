@@ -1,15 +1,23 @@
 import { useForm, ValidationError } from "@formspree/react";
-import { useContext, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { store } from "../../App";
 import playAudio from "../../utils/helpers/playAudio";
 import "./ContactForm.scss";
 
 export default function ContactForm() {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const [formState, handleSubmit] = useForm("xrgnjkjz");
   const [state, dispatch] = useContext(store);
   useEffect(() => {
     if (formState.succeeded) {
+      setUserName("");
+      setUserEmail("");
+      setMessage("");
+
       toast.success(
         state.language === "english"
           ? "Nachricht abgeschickt!"
@@ -47,6 +55,8 @@ export default function ContactForm() {
           type="text"
           name="user_name"
           placeholder={state.language === "english" ? "Ihr Name" : "Your name"}
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
           required
         />
         <ValidationError
@@ -65,6 +75,8 @@ export default function ContactForm() {
               ? "Ihre E-Mail-Adresse"
               : "Your email address"
           }
+          value={userEmail}
+          onChange={(e) => setUserEmail(e.target.value)}
           required
         />
         <ValidationError
@@ -81,6 +93,8 @@ export default function ContactForm() {
             : "Your message for me"
         }
         className={`field ${state.darkmode ? "dark-field" : "light-field"}`}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
         required
       />
       <ValidationError prefix="Email" field="message" errors={state.errors} />
