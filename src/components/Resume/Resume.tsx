@@ -56,8 +56,8 @@ export default function Resume() {
               : "Should you still have any questions, feel free to contact me. Additionally, you can download my resume below."}
           </p>
           <a
-            download="Mahdi_EL_Hasra_Lebenslauf"
-            href="../../assets/documents/Mahdi_EL_Hasra_Lebenslauf"
+            download="Mahdi_EL_Hasra_Lebenslauf.pdf"
+            href="../../assets/documents/Mahdi_EL_Hasra_Lebenslauf.pdf"
           >
             <button
               className="download"
