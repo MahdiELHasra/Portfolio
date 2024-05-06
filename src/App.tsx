@@ -19,6 +19,8 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Resume from "./components/Resume/Resume";
+import { Analytics } from "@vercel/analytics/react"
+
 import Contact from "./components/Contact/Contact";
 // Create store (redux naming convention)
 export const store = createContext<any>(null);
@@ -55,6 +57,7 @@ function App() {
         <Skills />
         <Resume />
         <Contact />
+        <Analytics/>
       </div>
     </StoreProvider>
   );
