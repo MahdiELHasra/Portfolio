@@ -55,7 +55,7 @@ export default function Projects() {
         </a>
 
         <a
-          href="jotion-x.vercel.app"
+          href="https://jotion-x.vercel.app/"
           className="jotion upper"
           target="_blank"
           onMouseDown={playAudio}
