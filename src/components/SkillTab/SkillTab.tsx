@@ -40,18 +40,17 @@ export default function SkillTab(props: SkillTabProps) {
       </h3>
       {topic === "languages" ? (
         <div className="skill-tab-list languages">
-          <Image source="typescript" name="TypeScript" />
+          {/* <Image source="python" name="Python" /> */}
           <Image source="javascript" name="JavaScript" />
-          <Image source="PHP" name="PHP" />
+          <Image source="python" name="Python" />
+          {/* <Image source="PHP" name="PHP" /> */}
           <Image source="css" name="CSS" />
           <Image source="html" name="HTML" />
-          <Image source="python" name="Python" />
         </div>
       ) : null}
       {topic === "frameworks" ? (
         <div className="skill-tab-list">
           <Image source="react" name="React" />
-          <Image source="next_2" name="Next.js" />
           <Image source="tailwind" name="TailwindCSS" />
         </div>
       ) : null}
